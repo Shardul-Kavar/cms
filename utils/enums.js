@@ -1,3 +1,25 @@
-const enums = {};
+export const ROLE = {
+  ADMIN: "ADMIN",
+  MANAGER: "MANAGER",
+  TECHNICIAN: "TECHNICIAN",
+};
 
-export default enums;
+export const JOB_STATUS = {
+  CANCELLED: "CANCELLED",
+  COMPLETED: "COMPLETED",
+  IN_PROGRESS: "IN_PROGRESS",
+  NEW: "NEW",
+  PENDING: "PENDING",
+};
+
+export const JOB_PRIORITY = {
+  LOW: "LOW",
+  MEDIUM: "MEDIUM",
+  HIGH: "HIGH",
+};
+
+export const CATEGORY = {
+  AC: "A/C",
+  FRIDGE: "FRIDGE",
+  WASHING_MACHINE: "WASHING_MACHINE",
+};

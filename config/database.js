@@ -1,10 +1,10 @@
 import { Sequelize } from "sequelize";
 import config from "./config.js";
 
-const sequelizeConfig = new Sequelize(
-  `postgresql://postgres.pzmwvrmhvhvimtooocmv:${config.db.password}@aws-1-ap-southeast-1.pooler.supabase.com:${config.db.port}/${config.db.name}`,
+const sequelize = new Sequelize(
+  `${config.db.type}://${config.db.username}:${config.db.password}@${config.db.host}:${config.db.port}/${config.db.name}`,
   {
-    dialect: "postgres",
+    dialect: config.db.dialect,
     dialectOptions: {
       ssl: {
         require: true,
@@ -15,4 +15,4 @@ const sequelizeConfig = new Sequelize(
   }
 );
 
-export default sequelizeConfig;
+export default sequelize;
