@@ -6,7 +6,7 @@ export default (sequelize) => {
     static associate(db) {
       db.Job.belongsTo(db.User, {
         foreignKey: "assignedTo",
-        as: "user",
+        as: "technician",
       });
       db.Job.belongsTo(db.User, {
         foreignKey: "createdBy",

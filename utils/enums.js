@@ -2,6 +2,7 @@ export const ROLE = {
   ADMIN: "ADMIN",
   MANAGER: "MANAGER",
   TECHNICIAN: "TECHNICIAN",
+  HELPER: "HELPER",
 };
 
 export const JOB_STATUS = {
@@ -19,7 +20,7 @@ export const JOB_PRIORITY = {
 };
 
 export const CATEGORY = {
-  AC: "A/C",
+  AC: "AC",
   FRIDGE: "FRIDGE",
   WASHING_MACHINE: "WASHING_MACHINE",
 };

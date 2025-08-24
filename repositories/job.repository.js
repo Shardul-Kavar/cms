@@ -41,6 +41,11 @@ const jobRepository = {
           as: "updated",
           attributes: ["id", "name", "email"],
         },
+        {
+          model: db.User,
+          as: "technician",
+          attributes: ["id", "name", "email"],
+        },
       ],
     });
     return jobs;
