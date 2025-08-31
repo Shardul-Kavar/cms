@@ -5,7 +5,6 @@ import http from "http";
 import config from "./config/config.js";
 import router from "./routes/index.js";
 import db from "./models/index.js";
-import { Server } from "socket.io";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 import createSocketServer from "./config/socket.js";
